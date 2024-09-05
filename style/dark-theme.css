@@ -1,0 +1,85 @@
+.dark-theme{
+  --hue: 210;
+  --color: hsl(var(--hue), 10%, 87%);
+  --header-background: hsla(var(--hue), 10%, 15%, 0.4);
+  --background: hsl(var(--hue), 0%, 10%);
+  --footer-background: hsl(var(--hue), 10%, 9%);
+  --text-glow-color: hsl(var(--hue), 80%, 60%);
+  --nav-hover-color: hsla(var(--hue), 40%, 60%, 0.4);
+  --command-hover-color: hsla(var(--hue), 0%, 20%, 0.6);
+  --command-active-color: rgba(0, 0, 23, 0.6);
+  --command-detail-bg-color: hsla(var(--hue), 20%, 20%, 0.4);
+}
+
+html.dark-theme{
+  color-scheme: dark;
+  background-color: var(--background);
+  color: var(--color);
+}
+
+.dark-theme #top-nav{
+  background-color: var(--header-background);
+}
+
+.dark-theme #top-nav ul li a:hover{
+  background-color: var(--nav-hover-color);
+}
+
+.dark-theme code{
+  background-color: rgba(8, 8, 8, 0.6);
+  color: #fff;
+}
+
+.dark-theme .atname, .dark-theme .atchannel{
+  background-color: rgba(77, 77, 143, 0.57);
+  color: rgb(186, 186, 224);
+}
+.dark-theme footer{
+  background: var(--footer-background);
+}
+
+.dark-theme #commands .command-list-container{
+  border: 4px solid #00000070; 
+  border-left: 4px solid rgba(153, 153, 153, .2);
+}
+
+.dark-theme #commands .command-list-container .command-list-item{
+  background-color: rgba(6, 6, 12, 0.6); 
+  color: var(--color); 
+}
+
+.dark-theme #commands .command-list-container label + div{
+  background-color: var(--command-detail-bg-color);
+}
+
+.dark-theme #commands .command-list-container .command-list-item > label > div:hover{
+  background-color: var(--command-hover-color);
+}
+
+.dark-theme #commands .command-list-container .command-list-item > label:has(div > span input:checked) > div{
+  background-color: var(--command-active-color);
+}
+
+.dark-theme #commands .command-list-container .command-list-item > label > div > span:nth-child(3)::before{
+  border-right: 8px solid rgba(156, 153, 177, 0.4);
+}
+
+.dark-theme #timeline li::before{
+  border: 4px solid var(--background);
+  background-color: #7d7d7d;
+}
+
+.dark-theme #timeline .year{
+  border: 1px solid #7d7d7d; 
+  background-color: var(--background);
+}
+
+/* .dark-theme #index-square h1{
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.6),
+    2px 2px 0px rgba(0, 0, 0, 0.6),
+    6px 4px 6px rgba(0, 0, 0, 0.6)
+} */
+
+.dark-theme #interaction-message{
+  background-color: var(--footer-background);
+}

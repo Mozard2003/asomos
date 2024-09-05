@@ -1,0 +1,1151 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+  <!-- <meta charset="UTF-8"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Asomos | 指令列表</title>
+  <script>
+    if (localStorage.getItem('theme') === 'light-theme') {
+      document.documentElement.classList.add('light-theme');
+    }
+    else {
+      document.documentElement.classList.add('dark-theme');
+    }
+  </script>
+  <link href="../style.css" type="text/css" rel="stylesheet" />
+  <link href="./files/icon.ico" type="image/x-icon" rel="icon" />
+  <script src="../script.js" type="text/javascript" rel="sript" defer></script>
+</head>
+<body>
+  <nav id="top-nav">
+    <span id="logo" translate="no"><a href="../index.html">Asomos</a></span>
+    <div id="subpage-container">
+      <label for="subpage-nav">
+        <div id="hamburger">&equiv;</div>
+        <div id="close">&Cross;</div>
+        <input type="checkbox" name="top-nav" id="subpage-nav" >
+      </label>
+      <ul>
+        <li><a href="../sub/tutorial.html">使用教學</a></li>
+        <li><a href="../sub/commands.html">指令列表</a></li>
+        <li><a href="../sub/tos.html">使用條款</a></li>
+        <li><a href="../sub/invite.html">邀請機器人</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div id="wrapper">
+    <main id="commands">
+      <h1>指令列表</h1>
+      <article>
+        <section>
+          <h2>機器人</h2>
+          <div class="command-list-container">
+            <div class="command-list-item">
+              <label for="botinfo">
+                <div>
+                  <h4>botinfo</h4>
+                  <span class="command-description-1">機器人的資訊</span>
+                  <span>
+                    <input type="checkbox" name="botinfo" id="botinfo">
+                  </span>
+                </div>
+              </label>
+              <div class="detail">
+                <div class="command-description-2">
+                  <span>機器人的資訊</span>
+                </div>
+                <div class="command-aliase">
+                  <h4>指令別名</h4>
+                  <span>appinfo</span>
+                </div>
+                <div class="command-permission"> 
+                  <h4>所需權限</h4>
+                  <span>
+                    <span>
+                      <h5>使用者</h5>
+                      <span>無</span>
+                    </span>
+                    <span>
+                      <h5>機器人</h5>
+                      <span>檢視頻道, 傳送訊息, 嵌入連結, 傳送檔案, 查看審核日誌</span>
+                    </span>
+                  </span>
+                </div>
+                <div class="command-example">
+                  <h4>範例</h4>
+                  <span>
+                    <span>a!botinfo</span>
+                    <span>關於本機器人的資訊</span>
+                    <span>a!botinfo <span class="atname">Junior HiZollo</span></span>
+                    <span>查看 <span class="atname">Junior HiZollo</span> 機器人於群組當中的資訊</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="command-list-item">
+              <label for="report">
+                <div>
+                  <h4>report</h4>
+                  <span class="command-description-1">回報問題 / 提供意見</span>
+                  <span>
+                    <input type="checkbox" name="report" id="report">
+                  </span>
+                </div>
+              </label>
+              <div class="detail">
+                <div class="command-description-2">
+                  <span>回報問題 / 提供意見</span>
+                </div>
+                <div class="command-aliase">
+                  <h4>指令別名</h4>
+                  <span>bug, suggest</span>
+                </div>
+                <div class="command-permission"> 
+                  <h4>所需權限</h4>
+                  <span>
+                    <span>
+                      <h5>使用者</h5>
+                      <span>無</span>
+                    </span>
+                    <span>
+                      <h5>機器人</h5>
+                      <span>檢視頻道, 傳送訊息, 嵌入連結, 傳送檔案</span>
+                    </span>
+                  </span>
+                </div>
+                <div class="command-example">
+                  <h4>範例</h4>
+                  <span>
+                    <span>a!report</span>
+                    <span>開啟表單填寫資料並回傳給開發者</span>
+                    <span>a!bug 某指令又壞了</span>
+                    <span>表單填寫為漏洞類別，內容為: 某指令又壞了</span>
+                    <span>a!suggest 可以征服宇宙嗎</span>
+                    <span>表單填寫為建議類別，內容為: 可以征服宇宙嗎</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="command-list-item">
+              <label for="help">
+                <div>
+                  <h4>help</h4>
+                  <span class="command-description-1">機器人的指令說明</span>
+                  <span>
+                    <input type="checkbox" name="help" id="help">
+                  </span>
+                </div>
+              </label>
+              <div class="detail">
+                <div class="command-description-2">
+                  <span>機器人的指令說明</span>
+                </div>
+                <div class="command-aliase">
+                  <h4>指令別名</h4>
+                  <span>無</span>
+                </div>
+                <div class="command-permission"> 
+                  <h4>所需權限</h4>
+                  <span>
+                    <span>
+                      <h5>使用者</h5>
+                      <span>無</span>
+                    </span>
+                    <span>
+                      <h5>機器人</h5>
+                      <span>檢視頻道, 傳送訊息, 嵌入連結, 傳送檔案</span>
+                    </span>
+                  </span>
+                </div>
+                <div class="command-example">
+                  <h4>範例</h4>
+                  <span>
+                    <span>a!help</span>
+                    <span>列出機器人的指令列表</span>
+                    <span>a!help ping</span>
+                    <span>查看 ping 指令的說明</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="command-list-item">
+              <label for="ping">
+                <div>
+                  <h4>ping</h4>
+                  <span class="command-description-1">機器人的延遲</span>
+                  <span>
+                    <input type="checkbox" name="ping" id="ping">
+                  </span>
+                </div>
+              </label>
+              <div class="detail">
+                <div class="command-description-2">
+                  <span>機器人的延遲</span>
+                </div>
+                <div class="command-aliase">
+                  <h4>指令別名</h4>
+                  <span>無</span>
+                </div>
+                <div class="command-permission"> 
+                  <h4>所需權限</h4>
+                  <span>
+                    <span>
+                      <h5>使用者</h5>
+                      <span>無</span>
+                    </span>
+                    <span>
+                      <h5>機器人</h5>
+                      <span>檢視頻道, 傳送訊息</span>
+                    </span>
+                  </span>
+                </div>
+                <div class="command-example">
+                  <h4>範例</h4>
+                  <span>
+                    <span>a!ping</span>
+                    <span>pong! 查看要多久才會回應你的訊息</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h2>Discord</h2>
+          <div class="command-list-container">
+            <div class="command-list-item">
+              <label for="avatar">
+                <div>
+                  <h4>avatar</h4>
+                  <span class="command-description-1">查看使用者的頭像資訊</span>
+                  <span>
+                    <input type="checkbox" name="avatar" id="avatar">
+                  </span>
+                </div>
+              </label>
+              <div class="detail">
+                <div class="command-description-2">
+                  <span>查看使用者的頭像資訊</span>
+                </div>
+                <div class="command-aliase">
+                  <h4>指令別名</h4>
+                  <span>av</span>
+                </div>
+                <div class="command-permission"> 
+                  <h4>所需權限</h4>
+                  <span>
+                    <span>
+                      <h5>使用者</h5>
+                      <span>無</span>
+                    </span>
+                    <span>
+                      <h5>機器人</h5>
+                      <span>檢視頻道, 傳送訊息, 嵌入連結, 傳送檔案</span>
+                    </span>
+                  </span>
+                </div>
+                <div class="command-example">
+                  <h4>範例</h4>
+                  <span>
+                    <span>a!avatar</span>
+                    <span>查看自己的頭像</span>
+                    <span>a!av <span class="atname">Junior HiZollo</span></span>
+                    <span>查看 <span class="atname">Junior HiZollo</span> 的頭像</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="command-list-item">
+              <label for="bitfield">
+                <div>
+                  <h4>bitfield</h4>
+                  <span class="command-description-1">位元欄資料轉換</span>
+                  <span>
+                    <input type="checkbox" name="bitfield" id="bitfield">
+                  </span>
+                </div>
+              </label>
+              <div class="detail">
+                <div class="command-description-2">
+                  <span>位元欄資料轉換</span>
+                </div>
+                <div class="command-aliase">
+                  <h4>指令別名</h4>
+                  <span>bf, bitfields <br> p, uf</span>
+                </div>
+                <div class="command-permission"> 
+                  <h4>所需權限</h4>
+                  <span>
+                    <span>
+                      <h5>使用者</h5>
+                      <span>無</span>
+                    </span>
+                    <span>
+                      <h5>機器人</h5>
+                      <span>檢視頻道, 傳送訊息, 嵌入連結, 使用額外表情符號</span>
+                    </span>
+                  </span>
+                </div>
+                <div class="command-example">
+                  <h4>範例</h4>
+                  <span>
+                    <span>a!bitfield permission</span>
+                    <span>輸入表單，並計算權限位元欄</span>
+                    <span>a!bf p</span>
+                    <span>同 a!bitfield permission</span>
+                    <span>a!bf p 128</span>
+                    <span>會告訴你 128 位元欄的權限為何</span>
+                    <span>a!bitfield userflag</span>
+                    <span>輸入表單，並計算權限位元欄</span>
+                    <span>a!bf uf</span>
+                    <span>同 a!bitfield userflag</span>
+                    <span>a!bf uf 256</span>
+                    <span>會告訴你 256 位元欄的使用者 flag 為何</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="command-list-item">
+              <label for="channelinfo">
+                <div>
+                  <h4>channelinfo</h4>
+                  <span class="command-description-1">查看頻道資訊</span>
+                  <span>
+                    <input type="checkbox" name="channelinfo" id="channelinfo">
+                  </span>
+                </div>
+              </label>
+              <div class="detail">
+                <div class="command-description-2">
+                  <span>查看頻道資訊</span>
+                </div>
+                <div class="command-aliase">
+                  <h4>指令別名</h4>
+                  <span>channel</span>
+                </div>
+                <div class="command-permission"> 
+                  <h4>所需權限</h4>
+                  <span>
+                    <span>
+                      <h5>使用者</h5>
+                      <span>檢視頻道</span>
+                    </span>
+                    <span>
+                      <h5>機器人</h5>
+                      <span>檢視頻道, 傳送訊息, 嵌入連結</span>
+                    </span>
+                  </span>
+                </div>
+                <div class="command-example">
+                  <h4>範例</h4>
+                  <span>
+                    <span>a!channel</span>
+                    <span>查看目前所在頻道的資訊</span>
+                    <span>a!channel <span class="atchannel">聊天室</span></span>
+                    <span>查看 <span class="atchannel">聊天室</span> 頻道的資訊</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="command-list-item">
+              <label for="clear">
+                <div>
+                  <h4>clear</h4>
+                  <span class="command-description-1">清除頻道內指定數量的訊息</span>
+                  <span>
+                    <input type="checkbox" name="clear" id="clear">
+                  </span>
+                </div>
+              </label>
+              <div class="detail">
+                <div class="command-description-2">
+                  <span>清除頻道內指定數量的訊息</span>
+                </div>
+                <div class="command-aliase">
+                  <h4>指令別名</h4>
+                  <span>cls, purge</span>
+                </div>
+                <div class="command-permission"> 
+                  <h4>所需權限</h4>
+                  <span>
+                    <span>
+                      <h5>使用者</h5>
+                      <span>管理訊息</span>
+                    </span>
+                    <span>
+                      <h5>機器人</h5>
+                      <span>檢視頻道, 傳送訊息, 嵌入連結, 管理訊息</span>
+                    </span>
+                  </span>
+                </div>
+                <div class="command-example">
+                  <h4>範例</h4>
+                  <span>
+                    <span>a!clear 64</span>
+                    <span>清除頻道中 64 則訊息</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="command-list-item">
+              <label for="emojiinfo">
+                <div>
+                  <h4>emojiinfo</h4>
+                  <span class="command-description-1">查看群組表情列表 / 資訊</span>
+                  <span>
+                    <input type="checkbox" name="emojiinfo" id="emojiinfo">
+                  </span>
+                </div>
+              </label>
+              <div class="detail">
+                <div class="command-description-2">
+                  <span>查看群組表情列表 / 資訊</span>
+                </div>
+                <div class="command-aliase">
+                  <h4>指令別名</h4>
+                  <span>emoji</span>
+                </div>
+                <div class="command-permission"> 
+                  <h4>所需權限</h4>
+                  <span>
+                    <span>
+                      <h5>使用者</h5>
+                      <span>無</span>
+                    </span>
+                    <span>
+                      <h5>機器人</h5>
+                      <span>檢視頻道, 傳送訊息, 嵌入連結, 傳送檔案, 管理表情符號</span>
+                    </span>
+                  </span>
+                </div>
+                <div class="command-example">
+                  <h4>範例</h4>
+                  <span>
+                    <span>a!emojiinfo</span>
+                    <span>列出群組中所有的表情</span>
+                    <span>a!emojiinfo <img style="width: 1.4rem; vertical-align: middle;" src="../files/ㄎㄧㄤ.png"></span>
+                    <span>查看關於 <img style="width: 1.4rem; vertical-align: middle" src="../files/ㄎㄧㄤ.png"> 表情的資訊</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="command-list-item">
+              <label for="roleinfo">
+                <div>
+                  <h4>roleinfo</h4>
+                  <span class="command-description-1">查看群組身分組列表 / 資訊</span>
+                  <span>
+                    <input type="checkbox" name="roleinfo" id="roleinfo">
+                  </span>
+                </div>
+              </label>
+              <div class="detail">
+                <div class="command-description-2">
+                  <span>查看群組身分組列表 / 資訊</span>
+                </div>
+                <div class="command-aliase">
+                  <h4>指令別名</h4>
+                  <span>role, roles</span>
+                </div>
+                <div class="command-permission"> 
+                  <h4>所需權限</h4>
+                  <span>
+                    <span>
+                      <h5>使用者</h5>
+                      <span>無</span>
+                    </span>
+                    <span>
+                      <h5>機器人</h5>
+                      <span>檢視頻道, 傳送訊息, 嵌入連結</span>
+                    </span>
+                  </span>
+                </div>
+                <div class="command-example">
+                  <h4>範例</h4>
+                  <span>
+                    <span>a!roleinfo</span>
+                    <span>列出群組中所有的身分組</span>
+                    <span>a!roleinfo 908728496543653918</span>
+                    <span>查看關於 908728496543653918 身分組的資訊</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="command-list-item">
+              <label for="server">
+                <div>
+                  <h4>server</h4>
+                  <span class="command-description-1">查看群組資訊 / 圖示 / 社群描述 / 設定伺服器地區</span>
+                  <span>
+                    <input type="checkbox" name="serverinfo" id="server">
+                  </span>
+                </div>
+              </label>
+              <div class="detail">
+                <div class="command-description-2">
+                  <span>查看群組資訊 / 圖示 / 社群描述 / 設定伺服器地區</span>
+                </div>
+                <div class="command-aliase">
+                  <h4>指令別名</h4>
+                  <span>serverinfo, guild, guildinfo</span>
+                </div>
+                <div class="command-permission"> 
+                  <h4>所需權限</h4>
+                  <span>
+                    <span>
+                      <h5>使用者</h5>
+                      <span>管理群組</span>
+                    </span>
+                    <span>
+                      <h5>機器人</h5>
+                      <span>檢視頻道, 傳送訊息, 嵌入連結, 傳送檔案, 管理群組</span>
+                    </span>
+                  </span>
+                </div>
+                <div class="command-example">
+                  <h4>範例</h4>
+                  <span>
+                    <span>a!server</span>
+                    <span>所在群組的資訊</span>
+                    <span>a!server icon</span>
+                    <span>所在群組的頭像</span>
+                    <span>a!server community</span>
+                    <span>所在群組的社群資訊</span>
+                    <span>a!server region</span>
+                    <span>設定所在群組的伺服器位置</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="command-list-item">
+              <label for="stickerinfo">
+                <div>
+                  <h4>stickerinfo</h4>
+                  <span class="command-description-1">查看群組貼圖列表、資訊 / 查看貼圖包資訊</span>
+                  <span>
+                    <input type="checkbox" name="stickerinfo" id="stickerinfo">
+                  </span>
+                </div>
+              </label>
+              <div class="detail">
+                <div class="command-description-2">
+                  <span>查看群組貼圖列表、資訊 / 查看貼圖包資訊</span>
+                </div>
+                <div class="command-aliase">
+                  <h4>指令別名</h4>
+                  <span>sticker, stickers</span>
+                </div>
+                <div class="command-permission"> 
+                  <h4>所需權限</h4>
+                  <span>
+                    <span>
+                      <h5>使用者</h5>
+                      <span>無</span>
+                    </span>
+                    <span>
+                      <h5>機器人</h5>
+                      <span>檢視頻道, 傳送訊息, 管理表情符號</span>
+                    </span>
+                  </span>
+                </div>
+                <div class="command-example">
+                  <h4>範例</h4>
+                  <span>
+                    <span>a!stickerinfo</span>
+                    <span>列出群組中所有的貼圖，或是傳送指令時同時傳送貼圖，以查看該貼圖資訊</span>
+                    <span>a!stickerinfo 819128604311027752</span>
+                    <span>查看貼圖 id 為 819128604311027752 貼圖的資訊</span>
+                    <span>a!stickerinfo 817709667701751820</span>
+                    <span>查看貼圖包 id 為 817709667701751820 貼圖包的資訊</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="command-list-item">
+              <label for="userinfo">
+                <div>
+                  <h4>userinfo</h4>
+                  <span class="command-description-1">查看使用者 / 成員資訊</span>
+                  <span>
+                    <input type="checkbox" name="userinfo" id="userinfo">
+                  </span>
+                </div>
+              </label>
+              <div class="detail">
+                <div class="command-description-2">
+                  <span>查看使用者 / 成員資訊</span>
+                </div>
+                <div class="command-aliase">
+                  <h4>指令別名</h4>
+                  <span>user</span>
+                </div>
+                <div class="command-permission"> 
+                  <h4>所需權限</h4>
+                  <span>
+                    <span>
+                      <h5>使用者</h5>
+                      <span>無</span>
+                    </span>
+                    <span>
+                      <h5>機器人</h5>
+                      <span>檢視頻道, 傳送訊息, 嵌入連結, 傳送檔案</span>
+                    </span>
+                  </span>
+                </div>
+                <div class="command-example">
+                  <h4>範例</h4>
+                  <span>
+                    <span>a!userinfo</span>
+                    <span>查看自己的使用者資訊</span>
+                    <span>a!userinfo <span class="atname">AC0xRPFS001</span></span>
+                    <span>查看<span class="atname">AC0xRPFS001</span>的使用者資訊</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h2>資訊</h2>
+          <div class="command-list-container">
+            <div class="command-list-item">
+              <label for="color">
+                <div>
+                  <h4>color</h4>
+                  <span class="command-description-1">色碼轉傳 & 色彩資訊</span>
+                  <span>
+                    <input type="checkbox" name="color" id="color">
+                  </span>
+                </div>
+              </label>
+              <div class="detail">
+                <div class="command-description-2">
+                  <span>色碼轉傳 & 色彩資訊</span>
+                </div>
+                <div class="command-aliase">
+                  <h4>指令別名</h4>
+                  <span>無</span>
+                </div>
+                <div class="command-permission"> 
+                  <h4>所需權限</h4>
+                  <span>
+                    <span>
+                      <h5>使用者</h5>
+                      <span>無</span>
+                    </span>
+                    <span>
+                      <h5>機器人</h5>
+                      <span>檢視頻道, 傳送訊息, 嵌入連結, 傳送檔案</span>
+                    </span>
+                  </span>
+                </div>
+                <div class="command-example">
+                  <h4>範例</h4>
+                  <span>
+                    <span>a!color</span>
+                    <span>給你點顏色瞧瞧</span>
+                    <span>a!color rgb 128 128 172</span>
+                    <span>給你點顏色瞧瞧</span>
+                    <span>a!color cmyk 80 50 0 10</span>
+                    <span>給你點顏色瞧瞧</span>
+                    <span>a!color hex #2323aa</span>
+                    <span>給你點顏色瞧瞧</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="command-list-item">
+              <label for="krtc">
+                <div>
+                  <h4>krtc</h4>
+                  <span class="command-description-1">高雄捷運票價 & 乘車資訊</span>
+                  <span>
+                    <input type="checkbox" name="krtc" id="krtc">
+                  </span>
+                </div>
+              </label>
+              <div class="detail">
+                <div class="command-description-2">
+                  <span>高雄捷運票價 & 乘車資訊</span>
+                </div>
+                <div class="command-aliase">
+                  <h4>指令別名</h4>
+                  <span>無</span>
+                </div>
+                <div class="command-permission"> 
+                  <h4>所需權限</h4>
+                  <span>
+                    <span>
+                      <h5>使用者</h5>
+                      <span>無</span>
+                    </span>
+                    <span>
+                      <h5>機器人</h5>
+                      <span>檢視頻道, 傳送訊息, 嵌入連結, 傳送檔案</span>
+                    </span>
+                  </span>
+                </div>
+                <div class="command-example">
+                  <h4>範例</h4>
+                  <span>
+                    <span>a!krtc 左營 鳳山</span>
+                    <span>查看左營至鳳山的車費、搭乘時間、搭乘路線</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="command-list-item">
+              <label for="moon">
+                <div>
+                  <h4>moon</h4>
+                  <span class="command-description-1">今日月亮資訊</span>
+                  <span>
+                    <input type="checkbox" name="moon" id="moon">
+                  </span>
+                </div>
+              </label>
+              <div class="detail">
+                <div class="command-description-2">
+                  <span>今日月亮資訊</span>
+                </div>
+                <div class="command-aliase">
+                  <h4>指令別名</h4>
+                  <span>無</span>
+                </div>
+                <div class="command-permission"> 
+                  <h4>所需權限</h4>
+                  <span>
+                    <span>
+                      <h5>使用者</h5>
+                      <span>無</span>
+                    </span>
+                    <span>
+                      <h5>機器人</h5>
+                      <span>檢視頻道, 傳送訊息, 嵌入連結, 傳送檔案</span>
+                    </span>
+                  </span>
+                </div>
+                <div class="command-example">
+                  <h4>範例</h4>
+                  <span>
+                    <span>a!moon</span>
+                    <span>查看今日月相、月出、月落時間、下次滿月、新月日期</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="command-list-item">
+              <label for="thsr">
+                <div>
+                  <h4>thsr</h4>
+                  <span class="command-description-1">臺灣高鐵票價查詢</span>
+                  <span>
+                    <input type="checkbox" name="thsr" id="thsr">
+                  </span>
+                </div>
+              </label>
+              <div class="detail">
+                <div class="command-description-2">
+                  <span>臺灣高鐵票價查詢</span>
+                </div>
+                <div class="command-aliase">
+                  <h4>指令別名</h4>
+                  <span>無</span>
+                </div>
+                <div class="command-permission"> 
+                  <h4>所需權限</h4>
+                  <span>
+                    <span>
+                      <h5>使用者</h5>
+                      <span>無</span>
+                    </span>
+                    <span>
+                      <h5>機器人</h5>
+                      <span>檢視頻道, 傳送訊息, 嵌入連結, 傳送檔案</span>
+                    </span>
+                  </span>
+                </div>
+                <div class="command-example">
+                  <h4>範例</h4>
+                  <span>
+                    <span>a!thsr 臺北 臺中</span>
+                    <span>查看臺北至臺中的車費</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="command-list-item">
+              <label for="time">
+                <div>
+                  <h4>time</h4>
+                  <span class="command-description-1">目前日期與時間資訊</span>
+                  <span>
+                    <input type="checkbox" name="time" id="time">
+                  </span>
+                </div>
+              </label>
+              <div class="detail">
+                <div class="command-description-2">
+                  <span>目前日期與時間資訊</span>
+                </div>
+                <div class="command-aliase">
+                  <h4>指令別名</h4>
+                  <span>無</span>
+                </div>
+                <div class="command-permission"> 
+                  <h4>所需權限</h4>
+                  <span>
+                    <span>
+                      <h5>使用者</h5>
+                      <span>無</span>
+                    </span>
+                    <span>
+                      <h5>機器人</h5>
+                      <span>檢視頻道, 傳送訊息, 嵌入連結, 傳送檔案</span>
+                    </span>
+                  </span>
+                </div>
+                <div class="command-example">
+                  <h4>範例</h4>
+                  <span>
+                    <span>a!time</span>
+                    <span>現在時間、日期、農曆、節氣、今日日出、日落時間</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="command-list-item">
+              <label for="tra">
+                <div>
+                  <h4>tra</h4>
+                  <span class="command-description-1">臺灣鐵路票價試算</span>
+                  <span>
+                    <input type="checkbox" name="tra" id="tra">
+                  </span>
+                </div>
+              </label>
+              <div class="detail">
+                <div class="command-description-2">
+                  <span>臺灣鐵路票價試算</span>
+                </div>
+                <div class="command-aliase">
+                  <h4>指令別名</h4>
+                  <span>無</span>
+                </div>
+                <div class="command-permission"> 
+                  <h4>所需權限</h4>
+                  <span>
+                    <span>
+                      <h5>使用者</h5>
+                      <span>無</span>
+                    </span>
+                    <span>
+                      <h5>機器人</h5>
+                      <span>檢視頻道, 傳送訊息, 嵌入連結, 傳送檔案</span>
+                    </span>
+                  </span>
+                </div>
+                <div class="command-example">
+                  <h4>範例</h4>
+                  <span>
+                    <span>a!tra 追分 成功</span>
+                    <span>計算追分至成功的車費和里程</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="command-list-item">
+              <label for="trtc">
+                <div>
+                  <h4>trtc</h4>
+                  <span class="command-description-1">臺北捷運票價 & 乘車資訊</span>
+                  <span>
+                    <input type="checkbox" name="trtc" id="trtc">
+                  </span>
+                </div>
+              </label>
+              <div class="detail">
+                <div class="command-description-2">
+                  <span>臺北捷運票價 & 乘車資訊</span>
+                </div>
+                <div class="command-aliase">
+                  <h4>指令別名</h4>
+                  <span>無</span>
+                </div>
+                <div class="command-permission"> 
+                  <h4>所需權限</h4>
+                  <span>
+                    <span>
+                      <h5>使用者</h5>
+                      <span>無</span>
+                    </span>
+                    <span>
+                      <h5>機器人</h5>
+                      <span>檢視頻道, 傳送訊息, 嵌入連結, 傳送檔案</span>
+                    </span>
+                  </span>
+                </div>
+                <div class="command-example">
+                  <h4>範例</h4>
+                  <span>
+                    <span>a!trtc 十四張 東湖</span>
+                    <span>查看十四張至東湖的車費、搭乘時間、搭乘路線</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="command-list-item">
+              <label for="weather">
+                <div>
+                  <h4>weather</h4>
+                  <span class="command-description-1">臺灣各縣市 / 鄉鎮天氣預報</span>
+                  <span>
+                    <input type="checkbox" name="weather" id="weather">
+                  </span>
+                </div>
+              </label>
+              <div class="detail">
+                <div class="command-description-2">
+                  <span>臺灣各縣市 / 鄉鎮天氣預報</span>
+                </div>
+                <div class="command-aliase">
+                  <h4>指令別名</h4>
+                  <span>無</span>
+                </div>
+                <div class="command-permission"> 
+                  <h4>所需權限</h4>
+                  <span>
+                    <span>
+                      <h5>使用者</h5>
+                      <span>無</span>
+                    </span>
+                    <span>
+                      <h5>機器人</h5>
+                      <span>檢視頻道, 傳送訊息, 嵌入連結, 傳送檔案</span>
+                    </span>
+                  </span>
+                </div>
+                <div class="command-example">
+                  <h4>範例</h4>
+                  <span>
+                    <span>a!weather</span>
+                    <span>選擇地區查看該縣市的天氣預報</span>
+                    <span>a!weather 臺北市</span>
+                    <span>查看臺北市的天氣預報 (若未輸入鄉鎮市區，系統將自動選擇地方政府之所在地)</span>
+                    <span>a!weather 屏東縣 枋寮鄉</span>
+                    <span>查看屏東縣枋寮鄉的天氣預報</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h2>娛樂</h2>
+          <div class="command-list-container">
+            <div class="command-list-item">
+              <label for="choose">
+                <div>
+                  <h4>choose</h4>
+                  <span class="command-description-1">幫助選擇障礙的使用者</span>
+                  <span>
+                    <input type="checkbox" name="choose" id="choose">
+                  </span>
+                </div>
+              </label>
+              <div class="detail">
+                <div class="command-description-2">
+                  <span>幫助選擇障礙的使用者</span>
+                </div>
+                <div class="command-aliase">
+                  <h4>指令別名</h4>
+                  <span>pick</span>
+                </div>
+                <div class="command-permission"> 
+                  <h4>所需權限</h4>
+                  <span>
+                    <span>
+                      <h5>使用者</h5>
+                      <span>無</span>
+                    </span>
+                    <span>
+                      <h5>機器人</h5>
+                      <span>檢視頻道, 傳送訊息</span>
+                    </span>
+                  </span>
+                </div>
+                <div class="command-example">
+                  <h4>範例</h4>
+                  <span>
+                    <span>a!choose 設計系 資工系 醫學系 強化系</span>
+                    <span>從你給的選項隨機選出一個結果</span>
+                  </span>
+                </div>
+              </div>
+            </div><div class="command-list-item">
+              <label for="lottery">
+                <div>
+                  <h4>lottery</h4>
+                  <span class="command-description-1">抽取指定範圍內的數字</span>
+                  <span>
+                    <input type="checkbox" name="lottery" id="lottery">
+                  </span>
+                </div>
+              </label>
+              <div class="detail">
+                <div class="command-description-2">
+                  <span>抽取指定範圍內的數字</span>
+                </div>
+                <div class="command-aliase">
+                  <h4>指令別名</h4>
+                  <span>lo</span>
+                </div>
+                <div class="command-permission"> 
+                  <h4>所需權限</h4>
+                  <span>
+                    <span>
+                      <h5>使用者</h5>
+                      <span>無</span>
+                    </span>
+                    <span>
+                      <h5>機器人</h5>
+                      <span>檢視頻道, 傳送訊息</span>
+                    </span>
+                  </span>
+                </div>
+                <div class="command-example">
+                  <h4>範例</h4>
+                  <span>
+                    <span>a!lottery 1 10</span>
+                    <span>從 1 到 10 抽取 1 個數字</span>
+                    <span>a!lottery 1 100 5</span>
+                    <span>從 1 到 100 抽取 5 個不重複的數字</span>
+                    <span>a!lottery 1 100 10 true</span>
+                    <span>從 1 到 100 抽取 10 個可以重複的數字</span>
+                  </span>
+                </div>
+              </div>
+            </div><div class="command-list-item">
+              <label for="thinking">
+                <div>
+                  <h4>thinking</h4>
+                  <span class="command-description-1">思考..</span>
+                  <span>
+                    <input type="checkbox" name="thinking" id="thinking">
+                  </span>
+                </div>
+              </label>
+              <div class="detail">
+                <div class="command-description-2">
+                  <span>思考..</span>
+                </div>
+                <div class="command-aliase">
+                  <h4>指令別名</h4>
+                  <span>think</span>
+                </div>
+                <div class="command-permission"> 
+                  <h4>所需權限</h4>
+                  <span>
+                    <span>
+                      <h5>使用者</h5>
+                      <span>無</span>
+                    </span>
+                    <span>
+                      <h5>機器人</h5>
+                      <span>檢視頻道, 傳送訊息, 傳送檔案</span>
+                    </span>
+                  </span>
+                </div>
+                <div class="command-example">
+                  <h4>範例</h4>
+                  <span>
+                    <span>a!thinking</span>
+                    <span>我會開始思考持續 10 至 300 秒</span>
+                  </span>
+                </div>
+              </div>
+            </div><div class="command-list-item">
+              <label for="quiz">
+                <div>
+                  <h4>quiz</h4>
+                  <span class="command-description-1">設計群的專一小測驗</span>
+                  <span>
+                    <input type="checkbox" name="quiz" id="quiz">
+                  </span>
+                </div>
+              </label>
+              <div class="detail">
+                <div class="command-description-2">
+                  <span>設計群的專一小測驗</span>
+                </div>
+                <div class="command-aliase">
+                  <h4>指令別名</h4>
+                  <span>無</span>
+                </div>
+                <div class="command-permission"> 
+                  <h4>所需權限</h4>
+                  <span>
+                    <span>
+                      <h5>使用者</h5>
+                      <span>無</span>
+                    </span>
+                    <span>
+                      <h5>機器人</h5>
+                      <span>檢視頻道, 傳送訊息, 嵌入連結, 傳送檔案</span>
+                    </span>
+                  </span>
+                </div>
+                <div class="command-example">
+                  <h4>範例</h4>
+                  <span>
+                    <span>a!quiz</span>
+                    <span>從歷屆統測的設計群專一考古題出題來考你</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </article>
+    </main>
+  </div>
+<footer>
+    <nav id="bottom-nav">
+      <div>
+        <h3><a href="../index.html">Asomos</a></h3>
+        <ul>
+          <li><a href="../sub/tutorial.html">使用教學</a></li>
+          <li><a href="../sub/commands.html">指令列表</a></li>
+          <li><a href="../sub/tos.html">使用條款</a></li>
+          <li><a href="../sub/invite.html">邀請機器人</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>其他資訊</h3>
+        <ul>
+          <li><a href="../sub/develop.html">團隊歷程</a></li>
+          <li><a href="../sub/blog.html">開發日誌</a></li>
+          <li><a href="../sub/changelog.html">更新日誌</a></li>
+          <li><a href="../sub/faq.html">常見問題</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>其他連結</h3>
+        <ul>
+          <li><a href="../404.html">加入群組</a></li>
+          <li><a href="../404.html">GitHub</a></li>
+          <li><a href="../404.html">top.gg</a></li>
+          <li><a href="../404.html">DST</a></li>
+        </ul>
+      </div>
+    </nav>
+    <label for="themeChanger">
+      <div title="切換主題" id="themeChanger-container">
+        <input type="checkbox" id="themeChanger" name="themeChanger">
+      </div>
+    </label>
+    <div class="copyright">&copy; Asomos 製作團隊 2021- 2024</div>
+  </footer>
+</body>
+</html>

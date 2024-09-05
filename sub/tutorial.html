@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Asomos | 使用教學</title>
+  <script>
+    if (localStorage.getItem('theme') === 'light-theme') {
+      document.documentElement.classList.add('light-theme');
+    }
+    else {
+      document.documentElement.classList.add('dark-theme');
+    }
+  </script>
+  <link href="../style.css" type="text/css" rel="stylesheet" />
+  <link href="../files/icon.ico" type="image/x-icon" rel="icon" />
+  <script src="../script.js" type="text/javascript" rel="sript" defer></script>
+</head>
+<body>
+  <nav id="top-nav">
+    <span id="logo" translate="no"><a href="../index.html">Asomos</a></span>
+    <div id="subpage-container">
+      <label for="subpage-nav">
+        <div id="hamburger">&equiv;</div>
+        <div id="close">&Cross;</div>
+        <input type="checkbox" name="top-nav" id="subpage-nav" >
+      </label>
+      <ul>
+        <li><a href="../sub/tutorial.html">使用教學</a></li>
+        <li><a href="../sub/commands.html">指令列表</a></li>
+        <li><a href="../sub/tos.html">使用條款</a></li>
+        <li><a href="../sub/invite.html">邀請機器人</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div id="wrapper">
+    <main id="tutorial">
+      <h1>使用教學</h1>
+      <article>
+        <section>
+          <h2>如何開始</h2>
+          <p>使用本專案代表你已經同意我們的使用條款。 請閱覽我們的<a href="../sub/tos.html" class="default">使用條款</a>，保護自己的權益。</p>
+          <p>如果還沒邀請我們的機器人，可以參考<a class="default" href="../sub/invite.html">邀請機器人</a>的頁面，裡面有關於邀請機器人的說明。</p>
+        </section>
+        <section>
+          <h2>指令觸發</h2>
+          <h3>訊息指令</h3>
+          <p>我們的前綴是 <code>a!</code> 。指令的輸入方式是 <code>前綴</code> + <code>指令名稱</code> ，有些指令會需要輸入 <code>參數</code> 並用空格分割才能執行。 先來試試看傳送一則 <code>a!ping</code> 的訊息，如果有收到回復的話，代表是正常運作的。</p>
+
+          <h3>斜線指令</h3>
+          <p>先在訊息框輸入 <code>/</code> ，接著去尋找要執行的指令，也可以輸入 <code>/</code> + <code>機器人名稱</code> 來選擇這個機器人可以執行的指令，或是輸入 <code>/</code> + <code>指令名稱</code> 尋找該指令。 斜線指令有比較多引導，也能避免遇到相同前綴、相同指令的機器人打架。</p>
+
+          <h3>隱藏指令</h3>
+          <p>這裡指的隱藏指令，是那些不存在於指令列表中的隱藏功能，部分的隱藏指令是不需要打 <code>前綴</code> 就能執行的特殊指令。 由於我們並沒有公開隱藏指令列表，請嘗試去尋找隱藏指令。</p>
+
+        </section>
+        <section>
+          <h2>其他</h2>
+          <p>想要知道還有什麼指令，可以使用 <code>help</code> 指令來查看指令列表和說明，也可以參閱本網站的<a class="default" href="../sub/commands.html">指令列表</a>。</p>
+          <p>好像出了一點問題？ 可以使用 <code>report</code> 指令聯絡開發者，或是直接加入我們 Discord 社群，尋找協助。</p>
+        </section>
+      </article>
+    </main>
+  </div>
+  <footer>
+    <nav id="bottom-nav">
+      <div>
+        <h3><a href="../index.html">Asomos</a></h3>
+        <ul>
+          <li><a href="../sub/tutorial.html">使用教學</a></li>
+          <li><a href="../sub/commands.html">指令列表</a></li>
+          <li><a href="../sub/tos.html">使用條款</a></li>
+          <li><a href="../sub/invite.html">邀請機器人</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>其他資訊</h3>
+        <ul>
+          <li><a href="../sub/develop.html">團隊歷程</a></li>
+          <li><a href="../sub/blog.html">開發日誌</a></li>
+          <li><a href="../sub/changelog.html">更新日誌</a></li>
+          <li><a href="../sub/faq.html">常見問題</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>其他連結</h3>
+        <ul>
+          <li><a href="../404.html">加入群組</a></li>
+          <li><a href="../404.html">GitHub</a></li>
+          <li><a href="../404.html">top.gg</a></li>
+          <li><a href="../404.html">DST</a></li>
+        </ul>
+      </div>
+    </nav>
+    <label for="themeChanger">
+      <div title="切換主題" id="themeChanger-container">
+        <input type="checkbox" id="themeChanger" name="themeChanger" style="display: none;">
+      </div>
+    </label>
+    <div class="copyright">&copy; Asomos 製作團隊 2021- 2024</div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,101 @@
+.light-theme{
+  --blurple: #5865f2;
+  --hue: 220;
+  --background: hsl(var(--hue), 0%, 87%);
+  --color: hsl(var(--hue), 40%, 15%);
+  --footer-background: hsl(var(--hue), 23%, 85%);
+  --header-background: hsla(var(--hue), 13%, 90%, 0.5);
+  --nav-hover-color: hsla(var(--hue), 40%, 70%, 0.4);
+
+  --command-active-color: rgb(215, 215, 255);
+  --command-hover-color: rgb(230, 230, 255);
+  --command-detail-bg-color: hsla(var(--hue), 20%, 90%, 0.6);
+  --a-color: hsl( calc( var(--hue) ), 80%, 40%);
+}
+
+html.light-theme{
+  color-scheme: light;
+  background-color: var(--background);
+  color: var(--color);
+}
+
+.light-theme #top-nav{
+  background-color: var(--header-background);
+}
+
+.light-theme #top-nav ul li a:hover{
+  background-color: var(--nav-hover-color);
+}
+
+.light-theme a.default{
+  color: var(--a-color);
+}
+
+.light-theme .atname, .light-theme .atchannel{
+  background-color: rgba(0, 0, 255, 0.1);
+  color: rgb(42, 42, 255);
+}
+
+.light-theme footer{
+  background-color: var(--footer-background);
+}
+
+.light-theme code{
+  background-color: rgba(0, 0, 0, 0.55);
+  color: #f8f9fa;
+}
+
+/* section 3 */
+.light-theme #commands .command-list-container{
+  border: 4px solid #ffffff70; 
+  border-left: 4px solid rgba(153, 153, 153, .2);
+}
+
+.light-theme #commands .command-list-container .command-list-item{
+  background-color: rgba(255, 255, 255, 0.6); 
+  color: var(--color); 
+}
+
+.light-theme #commands .command-list-container label + div{
+  background-color: var(--command-detail-bg-color);
+}
+
+.light-theme #commands .command-list-container .command-list-item > label > div:hover{
+  background-color: var(--command-hover-color);
+}
+
+.light-theme #commands .command-list-container .command-list-item > label:has(div > span input:checked) > div{
+  background-color: var(--command-active-color);
+}
+
+.light-theme #commands .command-list-container .command-list-item > label > div > span:nth-child(3)::before{
+  border-right: 8px solid rgb(0, 0, 0, .4);
+}
+
+.light-theme .tooltip > div{
+  background: rgba(245, 245, 245, 0.6);
+}
+
+.light-theme .tooltip > div::before{
+  border-right: 6px solid rgba(245, 245, 245, 0.6);
+}
+
+.light-theme #timeline li::before{
+  border: 4px solid var(--background);
+  background-color: #7d7d7d;
+}
+
+.light-theme #timeline .year{
+  border: 1px solid #7d7d7d; 
+  background-color: var(--background);
+}
+
+/* .light-theme #index-square h1{
+  text-shadow: 1px 1px 0px rgba(23, 23, 23, 0.6),
+    2px 2px 0px rgba(23, 23, 23, 0.6),
+    6px 4px 6px rgba(23, 23, 23, 0.6);
+} */
+
+.light-theme #interaction-message{
+  background-color: var(--footer-background);
+}

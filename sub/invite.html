@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Asomos | 邀請機器人 | Asomos 一款超讚的 Discord 機器人</title>
+  <script>
+    if (localStorage.getItem('theme') === 'light-theme') {
+      document.documentElement.classList.add('light-theme');
+    }
+    else {
+      document.documentElement.classList.add('dark-theme');
+    }
+  </script>
+  <link href="../style.css" type="text/css" rel="stylesheet" />
+  <link href="../files/icon.ico" type="image/x-icon" rel="icon" />
+  <script src="../script.js" type="text/javascript" rel="sript" defer></script>
+</head>
+<body>
+  <nav id="top-nav">
+    <span id="logo" translate="no"><a href="../index.html">Asomos</a></span>
+    <div id="subpage-container">
+      <label for="subpage-nav">
+        <div id="hamburger">&equiv;</div>
+        <div id="close">&Cross;</div>
+        <input type="checkbox" name="top-nav" id="subpage-nav" >
+      </label>
+      <ul>
+        <li><a href="../sub/tutorial.html">使用教學</a></li>
+        <li><a href="../sub/commands.html">指令列表</a></li>
+        <li><a href="../sub/tos.html">使用條款</a></li>
+        <li><a href="../sub/invite.html">邀請機器人</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div id="wrapper">
+    <main>
+      <h1>邀請機器人</h1>
+      <article>
+        <p>請選擇你要的邀請連結:</p>
+        <div class="button-rows">
+          <a href="javascript:URLdelay('https://discord.com/oauth2/authorize?client_id=725461895448100955&permissions=0&scope=bot+applications.commands')"
+            class="button border"
+            id="invite-0"
+            style="width: 210px;"
+            onclick="
+              load(['invite-0', 'invite-1']); 
+              addTextTo('interaction-message', '即將降落至： https://discord.com/oauth2/authorize?client_id=725461895448100955&permissions=0&scope=bot+applications.commands ；如果沒有成功降落，請點<a class=\'default\' target=\'_blank\' href=\'https://discord.com/oauth2/authorize?client_id=725461895448100955&permissions=0&scope=bot+applications.commands\'>這裡</a>')" >
+            邀請 - 無權限
+          </a>
+          <a href="javascript:URLdelay('https://discord.com/oauth2/authorize?client_id=725461895448100955&permissions=275955183008&scope=bot+applications.commands')"
+            class="button"
+            id="invite-1"
+            style="width: 210px;"
+            onclick="
+              load(['invite-0', 'invite-1']); 
+              addTextTo('interaction-message', '即將降落至： https://discord.com/oauth2/authorize?client_id=725461895448100955&permissions=275955183008&scope=bot+applications.commands ；如果沒有成功降落，請點<a class=\'default\' href=\'https://discord.com/oauth2/authorize?client_id=725461895448100955&permissions=275955183008&scope=bot+applications.commands\'>這裡</a>')" >
+            邀請 - 含權限
+          </a>
+        </div>
+        <div id="interaction-message"></div>
+        <!-- 到時候用 JavaScript 生出下面的文字 -->
+        <!-- <h1>即將降落至邀請連結...</h1>
+        <p style="text-align: center;">
+          若沒有成功降落，請按<a class="default" href="https://discord.com/oauth2/authorize?client_id=725461895448100955&permissions=0&scope=bot">這裡</a><br>
+          <span id="invite-link-with-beforeText">https://discord.com/oauth2/authorize?client_id=725461895448100955&permissions=0&scope=bot</span>
+        </p> -->
+        <section>
+          <h2>說明</h2>
+          <h3>無權限</h3>
+          <p>
+            和一般使用者一樣: 不會額外增加身分，因此你要在群組設置好權限。 
+          </p>
+          <h3>含權限</h3>
+          <p>
+            機器人自動獲取部分權限: 會增加一個已經設置好機器人所需權限的身分。
+          </p>
+          <p>以下是使用機器人所有指令時，所需要的權限清單: </p>
+          <div style="display: flex; flex-direction: column; gap: 10px;">
+            <div>
+              <h4>主要權限</h4>
+              <ul class="default" style="margin-left: 1em;">
+                <li>檢視頻道</li>
+                <li>管理伺服器: 更改群組地區</li>
+                <li>管理表情符號: 查看表情上傳者</li>
+                <li>檢視審核日誌: 取得機器人成員資料</li>
+              </ul>
+            </div>
+            <div>
+              <h4>文字權限</h4>
+              <ul class="default" style="margin-left: 1em;">
+                <li>傳送訊息</li>
+                <li>在討論串傳送訊息</li>
+                <li>嵌入連結</li>
+                <li>附加檔案</li>
+                <li>管理訊息: 清除訊息</li>
+                <li>讀取歷史訊息: 清除訊息、取得過去訊息的資料</li>
+                <li>使用額外表情: 部分指令需要</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section>
+          <p>當你進入邀請頁面後，選擇要新增至的群組並授權就行了。 注意: 邀請機器人至少需要有管理伺服器的權限，同時邀請者本身也要具有一定的權限才能賦予機器人相對應的權限。</p>
+        </section>
+      </article>
+    </main>
+  </div>
+<footer>
+    <nav id="bottom-nav">
+      <div>
+        <h3><a href="../index.html">Asomos</a></h3>
+        <ul>
+          <li><a href="../sub/tutorial.html">使用教學</a></li>
+          <li><a href="../sub/commands.html">指令列表</a></li>
+          <li><a href="../sub/tos.html">使用條款</a></li>
+          <li><a href="../sub/invite.html">邀請機器人</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>其他資訊</h3>
+        <ul>
+          <li><a href="../sub/develop.html">團隊歷程</a></li>
+          <li><a href="../sub/blog.html">開發日誌</a></li>
+          <li><a href="../sub/changelog.html">更新日誌</a></li>
+          <li><a href="../sub/faq.html">常見問題</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>其他連結</h3>
+        <ul>
+          <li><a href="../404.html">加入群組</a></li>
+          <li><a href="../404.html">GitHub</a></li>
+          <li><a href="../404.html">top.gg</a></li>
+          <li><a href="../404.html">DST</a></li>
+        </ul>
+      </div>
+    </nav>
+    <label for="themeChanger">
+      <div title="切換主題" id="themeChanger-container">
+        <input type="checkbox" id="themeChanger" name="themeChanger">
+      </div>
+    </label>
+    <div class="copyright">&copy; Asomos 製作團隊 2021- 2024</div>
+  </footer>
+</body>
+</html>
+<!-- 將這裡設置成2個按鈕，選擇邀請連結 -->

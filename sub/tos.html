@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Asomos | 使用條款</title>
+  <script>
+    if (localStorage.getItem('theme') === 'light-theme') {
+      document.documentElement.classList.add('light-theme');
+    }
+    else {
+      document.documentElement.classList.add('dark-theme');
+    }
+  </script>
+  <link href="../style.css" type="text/css" rel="stylesheet" />
+  <link href="../files/icon.ico" type="image/x-icon" rel="icon" />
+  <script src="../script.js" type="text/javascript" rel="sript" defer></script>
+</head>
+<body>
+  <nav id="top-nav">
+    <span id="logo" translate="no"><a href="../index.html">Asomos</a></span>
+    <div id="subpage-container">
+      <label for="subpage-nav">
+        <div id="hamburger">&equiv;</div>
+        <div id="close">&Cross;</div>
+        <input type="checkbox" name="top-nav" id="subpage-nav" >
+      </label>
+      <ul>
+        <li><a href="../sub/tutorial.html">使用教學</a></li>
+        <li><a href="../sub/commands.html">指令列表</a></li>
+        <li><a href="../sub/tos.html">使用條款</a></li>
+        <li><a href="../sub/invite.html">邀請機器人</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div id="wrapper">
+    <main id="tos">
+      <h1>使用條款 & 使用者隱私</h1>
+      <article>
+        <section>
+          <h3>條款版本: 第 1.4 版</h3>
+          <h3>更新日期: 2024 / 5 / 30</h3>
+        </section>
+        <section>
+          <h2>免責聲明</h2>
+            <p>1. <b>開始使用本專案代表你已經同意我們的使用條款。</b> 因此在開始使用本專案 (即邀請機器人至群組，或是使用機器人之指令) 之前，請閱覽我們的使用條款，保護自身權益。 如果對本條款有任何疑問，可以詢問 Asomos 的開發團隊。</p>
+            <p>2. 我們<b>不保證本專案能絕對安全、無錯誤的運行</b>，請使用者自行承擔使用本專案之風險。</p>
+            <p>3. 我們<b>不會承擔任何使用者失誤所導致的後果</b>。</p>
+          </section>
+        <section>
+          <h2>第一部分: 關於我們</h2>
+          <p>1. <b>我們是 Asomos 機器人的開發團隊。</b> 如果有需要可以加入我們的<a class="default" href="#">官方社群</a>，與我們聯絡。</p>
+          <p>2. Asomos 機器人，主要提供與 Discord 使用者進行互動的服務。</p>
+        </section>
+        <section>
+          <h2>第二部分: 使用規範</h2>
+          <p>1. 我們要求所有使用本專案之使用者<b>必須遵守 <a class="default" href="https://discord.com/terms">Discord 的服務條款</a> & <a class="default" href="https://discord.com/guidelines">社群守則</a></b>。</p>
+          <p>2. 本專案會嘗試回應每個下達的指令，但是<b>禁止透過本專案來洗版、惡意濫發訊息、破壞其他使用者的使用體驗、增加系統或 API 的負擔等行為</b>。</p>
+          <p>3. 使用者使用以下指令: <code>choose</code>、<code>clear</code> ，所生成的訊息內容或結果負有<b>完全責任</b>，請確保生成之內容或結果不會造成他人困擾或是違反相關規定。</p>
+          <p>4. 使用者嘗試或利用本專案觸犯包含但不限於使用者所屬群組的規定、 Discord 的服務條款、社群守則或使用者所屬地區的法規， Asomos 機器人及其開發團隊成員並<b>不會承擔任何責任</b>。</p>
+          <p>5. 若有不正當的使用行為，我們有權力<b>停止服務</b>特定的使用者或群組。</p>
+        </section>
+        <section>
+          <h2>第三部分: 使用者隱私</h2>
+          <p>
+            1. 部分指令會透過 API 取得 Discord 使用者、群組、頻道、身分、表情符號、貼圖、頭像或是訊息的資料作為指令的回應</b>。
+          </p>
+          <p>
+            2. 我們不會隨意竊取使用者的對話紀錄和內容，但指令觸發時，我們會紀錄指令的使用狀況，做為開發用的統計或除錯，以下為紀錄內容:
+            <ul class="default">
+              <li>指令名稱</li>
+              <li>指令類型</li>
+              <li>輸入內容</li>
+              <li>使用者名稱與 ID</li>
+              <li>群組名稱與 ID</li>
+              <li>觸發時間</li>
+              <li>終端是否報錯</li>
+              <!-- <li><s>機器人的回應</s></li> -->
+            </ul>
+          </p>
+          <p>
+            3. 開發團隊可以查看機器人所在群組的以下資訊: 
+            <ul class="default">
+              <li>群組名稱</li>
+              <li>群組 ID</li>
+              <li>群組人數</li>
+              <li>群組使用者</li>
+              <li>群組擁有者</li>
+            </ul>
+          </p>
+          <p>
+            4. <b>我們會保護以上資料，除非涉及法律或違反相關規範</b>，一般情況下不會將它提供給任何非本團隊的人。
+          </p>
+          <p>
+            4.1. <b>使用者在有正當理由的情況下，可以向我們申請查看指令使用紀錄</b>，但查看範圍僅限該群組成員的使用紀錄，且理由須經團隊成員審核通過。
+          </p>
+          <p>
+            5. 使用者若是使用指令: <code>report</code> ，部分的回報的內容是會公開顯示於我們社群的頻道，我們將會公開以下資訊:
+            <ul class="default">
+              <li>回報類型</li>
+              <li>回報內容</li>
+              <li>回報者名稱與 ID</li>
+              <li>回報群組名稱與 ID</li>
+              <li>回報時間</li>
+            </ul>
+          </p>
+          <p>
+            5.1. 使用 <code>report</code> 指令後，我們可能會利用以下三種方式進行回覆: 
+            <ul class="default">
+              <li>私人訊息</li>
+              <li>指令觸發的頻道</li>
+              <li>開發者的社群</li>
+            </ul>
+          </p>
+        </section>
+        <section>
+          <h2>第四部分: 智慧財產權</h2>
+          <p>1. 本專案包含但不限於機器人帳號、官方社群、程式碼、企業識別、本網站等開發團隊用於開發或運行機器人之設計，除了部分內容。 我們對這些內容保有一切智慧財產權。</p>
+          <p>2. 禁止未經過同意將本專案用於任何商業用途。</p>
+          <!-- * 1.本機器人為開放原始碼，為 GPL-3.0 授權條款，而基於本專案新增的附加條款，你**不可以**將本份原始碼用於任何商業用途，並需要將更改後的原始碼以相同協定方式釋出。 -->
+        </section>
+        <section>
+          <h2>第五部分: 法律 & 爭議</h2>
+          <p>1. 本專案與條款，依照中華民國(臺灣)法律為準。</p>
+          <p>
+            2. 有任何爭議發生時，希望雙方能以和解的方式處理。 若無法達成和解，雙方經過同意後，將爭議提交至具有管轄權之法院。 若使用者並非中華民國人，請參考<a href="https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=B0010001&flno=402" class="default">中華民國民事訴訟法第 402 條</a>。
+            <!-- <ol>
+              <li>一、依中華民國之法律，外國法院無管轄權者。</li>
+              <li>二、敗訴之被告未應訴者。但開始訴訟之通知或命令已於相當時期在該國合法送達，或依中華民國法律上之協助送達者，不在此限。</li>
+              <li>三、判決之內容或訴訟程序，有背中華民國之公共秩序或善良風俗者。</li>
+              <li>四、無相互之承認者。</li>
+            </ol> -->
+          </p>
+        </section>
+        <section>
+          <h2>第六部分: 服務的更動</h2>
+          <p>1. 我們具有隨時變更或終止本專案運作或服務的權力。</p>
+          <p>2. 本條款會因應需求而隨時進行修正。 建議定期查看使用條款，保護自身權益。</p>
+          <p>3. 使用者有權利隨時無條件停止使用本專案提供的服務。</p>
+        </section>
+      </article>
+    </main>
+  </div>
+<footer>
+    <nav id="bottom-nav">
+      <div>
+        <h3><a href="../index.html">Asomos</a></h3>
+        <ul>
+          <li><a href="../sub/tutorial.html">使用教學</a></li>
+          <li><a href="../sub/commands.html">指令列表</a></li>
+          <li><a href="../sub/tos.html">使用條款</a></li>
+          <li><a href="../sub/invite.html">邀請機器人</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>其他資訊</h3>
+        <ul>
+          <li><a href="../sub/develop.html">團隊歷程</a></li>
+          <li><a href="../sub/blog.html">開發日誌</a></li>
+          <li><a href="../sub/changelog.html">更新日誌</a></li>
+          <li><a href="../sub/faq.html">常見問題</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>其他連結</h3>
+        <ul>
+          <li><a href="../404.html">加入群組</a></li>
+          <li><a href="../404.html">GitHub</a></li>
+          <li><a href="../404.html">top.gg</a></li>
+          <li><a href="../404.html">DST</a></li>
+        </ul>
+      </div>
+    </nav>
+    <label for="themeChanger">
+      <div title="切換主題" id="themeChanger-container">
+        <input type="checkbox" id="themeChanger" name="themeChanger">
+      </div>
+    </label>
+    <div class="copyright">&copy; Asomos 製作團隊 2021- 2024</div>
+  </footer>
+</body>
+</html>
+

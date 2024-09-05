@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Asomos | 首頁</title>
+  <script>
+    if (localStorage.getItem('theme') === 'light-theme') {
+      document.documentElement.classList.add('light-theme');
+    }
+    else {
+      document.documentElement.classList.add('dark-theme');
+    }
+  </script>
+  <link href="style.css" type="text/css" rel="stylesheet" />
+  <link href="./files/icon.ico" type="image/x-icon" rel="icon" />
+  <style>
+    
+  </style>
+  <script src="./script.js" type="text/javascript" rel="sript" defer></script>
+</head>
+<body>
+    <nav id="top-nav">
+      <span id="logo" translate="no"><a href="./index.html">Asomos</a></span>
+      <div style="display: flex; justify-content: right; align-items: center;">
+        <label for="subpage-nav">
+          <div id="hamburger">&equiv;</div>
+          <div id="close">&Cross;</div>
+          <input type="checkbox" name="top-nav" id="subpage-nav" >
+        </label>
+        <ul>
+          <li><a href="./sub/tutorial.html">使用教學</a></li>
+          <li><a href="./sub/commands.html">指令列表</a></li>
+          <li><a href="./sub/tos.html">使用條款</a></li>
+          <li><a href="./sub/invite.html">邀請機器人</a></li>
+        </ul>
+      </div>
+    </nav>
+  <div id="wrapper">
+    <main id="index">
+    <div style="display: grid; grid-template-columns: 1fr;">
+      <div id="index-square">
+        <h1><span class="standard-color">Asomos</span>, 超讚的 <span class="blurple">Discord</span> 機器人</h1>
+        <ul class="feature-list">
+          <li>
+            <h3 class="hashtag">在地化</h3>
+            <div><span class="botName"></span> 是一款用 JavaScript 製作的中文介面機器人，內涵天氣、鐵路資訊等指令，更貼近福爾摩沙使用者的需求。</div>
+          </li>
+          <li>
+            <h3 class="hashtag">功能性</h3>
+            <div>我們製作了 25 種指令，具有一些簡易的小功能或是查詢資訊的能力，致力給予使用者簡潔且詳細的回應。</div>
+          </li>
+          <li>
+            <h3 class="hashtag">趣味性</h3>
+            <div>我們還額外設計了一些隱藏指令、特殊機制、彩蛋和隨機的指令回覆，讓使用更加有趣。</div>
+          </li>
+          <!-- <li>
+            <h3 class="hashtag">安全性</h3>
+            <div>妥善的權限設定，並檢視每位使用者的權限，使機器人不會隨意的被無權限者濫用。 </div>
+          </li> -->
+        </ul>
+        <div style="grid-template-columns: auto auto; ">
+          <a class="button border" href="./sub/tutorial.html">了解更多</a>
+          <a class="button" href="./sub/invite.html">邀請機器人</a>
+        </div>
+      </div>
+      <!-- <div style="border: 1px solid rgb(56, 56, 56); background-color: rgba(0, 120, 120, 0.458); position: absolute; width: 500px; height: 500px; left: 50%; top: 50%; translate: -50% -50%;"></div> -->
+    </div>
+    </main>
+    <main id="introduce">
+      <article>
+        <section class="left">
+          <div>
+          <h2>什麼是 Discord? 機器人又是啥?</h2>
+          <p>Discord 是一個社交平台，除了一般的使用者，還可以與其他開發者設計的機器人進行互動。</p>
+          <p>Discord 機器人，可以把他想像成 NPC (非玩家角色)，不同的事件可能會觸發機器人的行為，而最常見的就是透過指令或是訊息觸發。</p>
+          </div>
+          <div><img src="./files/網站介面插畫1.png"></div>
+        </section>
+        <section class="right">
+          <div>
+            <img src="./files/網站介面插畫2.png">
+          </div>
+          <div>
+            <h2>多樣化的指令</h2>
+            <p>從沒用的耍寶指令到... 有點用處的資訊指令</p>
+        </section>
+        <section class="left">
+          <div>
+            <h2>暗藏的機關</h2>
+            <p>一些特殊回覆 & 指令列表之外的隱藏指令</p>
+          </div>
+          <div>
+            <img src="./files/網站介面插畫3.png">
+          </div>
+        </section>
+        <!-- <section style="display: grid; grid-template-columns: 1fr; ">
+          <h2 style="text-align: left;">使用評價</h2>
+          <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit quam deleniti repellendus fugit fugiat nemo ab facere, vitae nam vero temporibus, animi unde laborum natus magni quidem? Facere, magnam doloremque?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore provident quas cumque vel distinctio esse, eius, quam laudantium possimus natus placeat beatae. Minus ipsum iste laudantium voluptas explicabo quasi omnis?</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium ipsam quibusdam fuga et iste laboriosam voluptatum, deserunt laborum. Magni veritatis itaque repellat voluptates perferendis amet laborum corporis temporibus dolor quis.</p>
+          </div>
+        </section> -->
+        <section>
+          <h2 style="text-align: center;">角色設定</h2>
+          <div class="infobox">
+            <div class="table-1 table">
+              <span><h3>阿索摩斯 / <span class="botName"></span> / アソモス</h3></span>
+              <span>年齡: 不詳 </span>
+              <span>生日: 6/25</span>
+              <span>角色設定: 
+                <div style="display: flex; flex-direction: column; gap: 10px;margin: 10px;">
+                    <p>不擅長說話 / 喜歡甜食和夏天 / 討厭冬天 / 怕冷，平時都穿著長袖，即使是夏天也一樣。</p>
+                    <p>因為都待在家裡，所以平時不會打理外表，作息很亂。</p>
+                </div>
+              </span>
+            </div>
+            <div>
+              <img alt="bot avatar" src="./files/bot logo-2.png">
+            </div>
+          </div>
+          <img src="./files/11zon-barcode.jpg" alt="" style="margin: auto; width: 140px; border-radius: 2px;">
+        </section>
+        <section style="display: grid; grid-template-columns: 1fr;">
+          <h2 style="text-align: center;">唉呦你<span style="color: transparent; position: absolute;">臉紅</span><span style="user-select: none;">心動</span>啦? 來<span style="color: transparent; position: absolute;">讓我</span><span style="user-select: none;">邀請</span>看看!</h2>
+          <div class="button-rows">
+            <a class="button border" style="border: 0; cursor: pointer;" onclick="open('https://www.youtube.com/watch?v=dQw4w9WgXcQ', null, 'null')">不要!</a>
+            <a href="./sub/invite.html" class="button"><span style="color: transparent; position: absolute;">いいよ来いよ</span><span style="user-select: none;">好啊來啊</span></a>
+          </div>
+        </section>
+      </article>
+    </main>
+  </div>
+  <footer>
+    <nav id="bottom-nav">
+      <div>
+        <h3><a href="index.html">Asomos</a></h3>
+        <ul>
+          <li><a href="./sub/tutorial.html">使用教學</a></li>
+          <li><a href="./sub/commands.html">指令列表</a></li>
+          <li><a href="./sub/tos.html">使用條款</a></li>
+          <li><a href="./sub/invite.html">邀請機器人</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>其他資訊</h3>
+        <ul>
+          <li><a href="./sub/develop.html">團隊歷程</a></li>
+          <li><a href="./sub/blog.html">開發日誌</a></li>
+          <li><a href="./sub/changelog.html">更新日誌</a></li>
+          <li><a href="./sub/faq.html">常見問題</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>其他連結</h3>
+        <ul>
+          <li><a href="./404.html">加入群組</a></li>
+          <li><a href="./404.html">GitHub</a></li>
+          <li><a href="./404.html">top.gg</a></li>
+          <li><a href="./404.html">DST</a></li>
+        </ul>
+      </div>
+    </nav>
+    <label for="themeChanger">
+      <div title="切換主題" id="themeChanger-container">
+        <input type="checkbox" id="themeChanger" name="themeChanger">
+      </div>
+    </label>
+    <div class="copyright">&copy; Asomos 製作團隊 2021- 2024</div>
+  </footer>
+</body>
+</html>

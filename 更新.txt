@@ -1,0 +1,28 @@
+創造 (2020, 6) v0.0.1 beta
+新反應: Hello, Hi
+
+放置 (2020, 6 - 2021, 6)  v0.0.2 beta
+
+開發 (2021, 6 - 2021, 12) v0.1.0
+AC大佬教學、更新djs至v13、設定機器人狀態、丟到replit上面、機器人狀態為統測倒數
+新反應: react, 量體溫(隨便丟一個數字), 解釋
+新反應: 水果棒球, 爆漿喇牙膏, 床好舒服, 統測倒數, 會考倒數
+新指令: coin, dice, youtube, ytdl, urban, dictionary, percent, 10s, reactiontest
+新指令: ping, clear, repeat, say, choose, userinfo, serverinfo, avatar, botinfo, moon, time, help
+新指令: weather, color, quiz, report, roleinfo
+
+放置 (2022, 1 - 2022, 8) v0.1.1
+開發 (2022, 9 - 2022, 11) v0.2.0
+重整指令系統、改良指令、刪除部分指令
+
+放置 (2022, 12 - 2023, 6) v0.2.1
+將機器人改名成3am
+
+開發 (2023, 7 - 2023, 12(現在)) v0.3.0
+更新部分指令
+新指令: calendar, battle, clyde
+新指令: trtc, rip, radio, sticker
+
+版本是根據時間瞎掰的
+AC早在2021年的7月就告訴我module.export這個東西，但我一直過了半年才使用他來分類指令 
+按照這個規律，我沒過多久，又要放置他了

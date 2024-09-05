@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+  <!-- <meta charset="UTF-8"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Asomos | 指令列表</title>
+  <script>
+    if (localStorage.getItem('theme') === 'light-theme') {
+      document.documentElement.classList.add('light-theme');
+    }
+    else {
+      document.documentElement.classList.add('dark-theme');
+    }
+  </script>
+  <link href="../style.css" type="text/css" rel="stylesheet" />
+  <link href="../files/icon.ico" type="image/x-icon" rel="icon" />
+  <script src="../script.js" type="text/javascript" rel="sript" defer></script>
+  <style>
+  </style>
+</head>
+<body>
+  <div id="wrapper">
+    <main id="commands">
+      <h1>指令列表</h1>
+      <article>
+        <section>
+          <h2>機器人</h2>
+          <div class="command-list-container">
+            <div class="command-list-item">
+              <label for="botinfo">
+                <div>
+                  <h4>botinfo</h4>
+                  <span class="command-description-1">機器人的資訊</span>
+                  <span>
+                    <input type="checkbox" name="botinfo" id="botinfo">
+                  </span>
+                </div>
+              </label>
+              <div class="detail">
+                <div class="command-description-2"> 
+                  <!-- hidden -->
+                  <span>機器人的資訊</span>
+                </div>
+                <div class="command-aliase">
+                  <h4>指令別名</h4>
+                  <span>appinfo</span>
+                </div>
+                <div class="command-permission"> 
+                  <h4>所需權限</h4>
+                  <span>
+                    <span>
+                      <h5>使用者</h5>
+                      <span>無</span>
+                    </span>
+                    <span>
+                      <h5>機器人</h5>
+                      <span>檢視頻道, 傳送訊息, 嵌入連結, 傳送檔案, 查看審核日誌</span>
+                    </span>
+                  </span>
+                </div>
+                <div class="command-example">
+                  <h4>範例</h4>
+                  <span>
+                    <span>a!botinfo</span>
+                    <span>關於本機器人的資訊</span>
+                    <span>a!botinfo <span class="atname">Junior HiZollo</span></span>
+                    <span>查看 HiZollo 機器人於群組當中的資訊</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+      </article>
+    </main>
+  </div>
+<footer>
+    <label for="themeChanger">
+      <div title="切換主題" id="themeChanger-container">
+        <input type="checkbox" id="themeChanger" name="themeChanger">
+      </div>
+    </label>
+  </footer>
+</body>
+</html>
+
+<!-- 如果有勾選就打開 -->
+<!-- 如果寬度小於指定尺寸，就改變顯示內容，部分 display: none 或是 grid template, flex 之類的 -->
+
+<!-- 製作指令群專用的樣子 -->
