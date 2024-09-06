@@ -66,6 +66,7 @@ nav{
   align-items: center;
   list-style: none;
   position: relative;
+  gap: 10px;
 }
 
 #top-nav ul li a{
@@ -695,13 +696,13 @@ div.table-2 > span:nth-child(2n-1){
 }
 
 /* 第四段: 響應式 Responsive rwd */
-@media (width < 750px){
+@media (max-width: 750px){
   #index .feature-list{
     grid-template-columns: 1fr 1fr;
   }
 }
 
-@media (width < 700px){
+@media (max-width: 700px){
   #index-square{
     height: auto;
   }
@@ -719,7 +720,7 @@ div.table-2 > span:nth-child(2n-1){
   }
 }
 
-@media (width < 650px){
+@media (max-width: 650px){
   
   .tooltip{
     display: none;
@@ -821,13 +822,13 @@ div.table-2 > span:nth-child(2n-1){
   }
 }
 
-@media (width < 550px){
+@media (max-width: 550px){
   #index-square h1{
     font-size: 3.5rem;
   }
 
 }
-@media (width < 420px){
+@media (max-width: 420px){
   #index-square{
     gap: 10px;
   }
@@ -863,7 +864,7 @@ div.table-2 > span:nth-child(2n-1){
   }
 }
 
-@media (width < 320px){
+@media (max-width: 320px){
   #index-square h1{
     word-break: break-all;
     padding: 0;
