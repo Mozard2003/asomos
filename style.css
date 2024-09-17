@@ -51,6 +51,7 @@ nav{
   position: sticky;
   width: 100%;
   top: 0;
+  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.2);
   z-index: 100;
@@ -445,7 +446,7 @@ main#index{
 #introduce article section{
   display: grid; 
   grid-template-columns: 1fr;
-  gap: 10px;
+  gap: 10px 40px;
 }
 #introduce article section.left{
   display: grid; 
@@ -457,7 +458,8 @@ main#index{
 }
 
 #introduce article section > div > img{
-  width: 100%; 
+  max-width: 100%; 
+  max-height: 300px;
   border-radius: 4px;
 }
 
@@ -573,6 +575,7 @@ main#index{
 .tooltip > div{
   opacity: 0;
   position: absolute;
+  -webkit-backdrop-filter: blur(4px);
   backdrop-filter: blur(4px);
   background: rgba(53, 53, 53, 0.6);
   padding: 10px;
@@ -599,6 +602,7 @@ main#index{
   border: 6px solid transparent;
   display: block;
   border-right: 6px solid rgba(53, 53, 53, 0.6);
+  -webkit-backdrop-filter: blur(4px);
   backdrop-filter: blur(4px);
   position: absolute;
   right: calc(100%);
@@ -731,6 +735,7 @@ div.table-2 > span:nth-child(2n-1){
   }
 
   #top-nav:has( #subpage-nav:checked ){
+    position: fixed;
     display: flex;
     flex-flow: column;
     /* justify-content: center; */
@@ -742,6 +747,7 @@ div.table-2 > span:nth-child(2n-1){
     overflow: auto;
     z-index: 1;
     scroll-snap-stop: always;
+    -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
   }
   #top-nav:has( #subpage-nav:checked ) ul{
@@ -828,7 +834,7 @@ div.table-2 > span:nth-child(2n-1){
   }
 
 }
-@media (max-width: 420px){
+@media (width < 420px){
   #index-square{
     gap: 10px;
   }
