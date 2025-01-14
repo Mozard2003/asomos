@@ -7,7 +7,7 @@
   --text-glow-color: hsl(var(--hue), 80%, 60%);
   --nav-hover-color: hsla(var(--hue), 40%, 60%, 0.4);
   --command-hover-color: hsla(var(--hue), 0%, 20%, 0.6);
-  --command-active-color: rgba(0, 0, 23, 0.6);
+  --command-active-color: hsla(170, 60%, 30%, 0.6);
   --command-detail-bg-color: hsla(var(--hue), 20%, 20%, 0.4);
 }
 
